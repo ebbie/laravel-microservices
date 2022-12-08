@@ -31,8 +31,8 @@ Route::group(['middleware' => 'auth:api'], function() {
     Route::get('users', 'App\Http\Controllers\UserController@index');
 
     Route::get('user','App\Http\Controllers\UserController@user');
-    Route::put('users/info','App\Http\Controllers\UserController@updateInfo');
-    Route::put('users/password','App\Http\Controllers\UserController@updatePassword');
+    Route::put('user/info','App\Http\Controllers\UserController@updateInfo');
+    Route::put('user/password','App\Http\Controllers\UserController@updatePassword');
 
     Route::get('roles', 'App\Http\Controllers\RoleController@index');
     Route::get('roles/{id}', 'App\Http\Controllers\RoleController@show');

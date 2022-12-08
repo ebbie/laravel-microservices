@@ -8,5 +8,5 @@ WORKDIR /app
 COPY . .
 RUN composer install
 
-CMD php artisan serve --host=0.0.0.0
+CMD php artisan serve --host=127.0.0.1
 EXPOSE 8000
